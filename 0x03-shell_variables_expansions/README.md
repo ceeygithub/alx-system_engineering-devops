@@ -5,11 +5,11 @@ Task 3. echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1)) ====  Counts the number
 Task 4. printenv ==== Lists environment variables
 Task 5. set ==== Lists all local variables and environment variables, and functions
 Task 6. BEST="School" ====  Creates a new local variable named 'School'
-Task 7. echo $(($BEST School)) ====    creates a new global variable named 'School'
+Task 7. export $(($BEST School)) ====    creates a new global variable named 'School'
 Task 8. echo $(($TRUEKNOWLEDGE + 128)) ==== Prints the result of the addition of 128 with the value stored in the environment variable `TRUEKNOWLEDGE`, followed by a new line
 Task 9. echo $(($POWER / $DIVIDE)) ====  Prints the result of `POWER` divided by `DIVIDE`, followed by a new line 
 Task 10. echo $((BREATH**$LOVE)) ==== Displays the result of `BREATH` to the power `LOVE`
-Task 11. echo $((2#BINARY)o) ==== Converts a number from base 2 to base 10.
+Task 11. echo $((2#BINARY)) ==== Converts a number from base 2 to base 10.
 Task 12. echo {a..z}{a..z} | tr " " "\n" | grep -v "oo" ==== Prints a number with two decimal places. The number is stored in the environment variable `NUM`.
 Task 13. printf "%.2f" $NUM | sort ==== Prints a number with two decimal places. The number is stored in the environment variable `NUM`.
 Task 14. printf '%x\n' $DECIMAL ==== converts a number from base 10 to base 16.
